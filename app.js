@@ -10,10 +10,7 @@ app.get("/",function(req,res){
         res.send("yay,it's weekend");
     }
     else{
-        res.write("<h1>booo!,I have to work</h1>");
-        res.write("<h1>booo!,I have to work</h1>");
-        res.write("<h1>booo!,I have to work</h1>");
-        res.send();
+        res.sendFile(__dirname + "/index.html");
     }
 
 })
